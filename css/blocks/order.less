@@ -13,6 +13,10 @@
 .form {
   display: flex;
   justify-content: space-around;
+
+  @media @mobile-sm {
+    flex-wrap: wrap;
+  }
 }
 
 .form__photo {
@@ -37,6 +41,10 @@
   color: @black;
   text-decoration: line-through;
   font-size: 30px;
+
+  @media @mobile-sm {
+    font-size: 20px;
+  }
 }
 
 .product__price-new {
@@ -52,9 +60,58 @@
       #72be54,
       #64e2f3,
       #c263b2);
+  -webkit-animation: move-background 5s linear infinite;
+  -moz-animation: move-background 5s linear infinite;
+  -o-animation: move-background 5s linear infinite;
   animation: move-background 5s linear infinite;
   background-clip: text;
   -webkit-background-clip: text;
+
+  @media @mobile-sm {
+    font-size: 50px;
+  }
+}
+
+@-o-keyframes move-background {
+  0% {
+    background-position: 0% 0%
+  }
+
+  50% {
+    background-position: 100% 0%
+  }
+
+  100% {
+    background-position: 0% 0%
+  }
+}
+
+@-moz-keyframes move-background {
+  0% {
+    background-position: 0% 0%
+  }
+
+  50% {
+    background-position: 100% 0%
+  }
+
+  100% {
+    background-position: 0% 0%
+  }
+}
+
+@-webkit-keyframes move-background {
+  0% {
+    background-position: 0% 0%
+  }
+
+  50% {
+    background-position: 100% 0%
+  }
+
+  100% {
+    background-position: 0% 0%
+  }
 }
 
 @keyframes move-background {
@@ -94,6 +151,13 @@
   pointer-events: none;
   opacity: 0;
   transition: 1s;
+  -moz-transition: 1s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+
+  @media @tablet {
+    left: 36px;
+  }
 }
 
 [data-tooltip]:hover::after {
@@ -128,6 +192,9 @@
   box-shadow: 0 0 20px 0 rgb(5, 140, 221, .8);
   color: @default;
   transition: .4s;
+  -moz-transition: 4s;
+  -webkit-transition: 4s;
+  -o-transition: 4s;
   cursor: pointer;
   outline: none;
 }
@@ -151,6 +218,10 @@
   font-weight: 100;
   text-align: center;
   font-size: 30px;
+
+  @media @mobile-sm {
+    font-size: 24px;
+  }
 }
 
 .countdown-number {

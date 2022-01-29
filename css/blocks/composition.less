@@ -2,6 +2,10 @@
 
 .composition {
   padding-bottom: 80px;
+
+  @media @mobile-sm {
+    padding-bottom: 20px;
+  }
 }
 
 .composition__block {
@@ -32,6 +36,11 @@
   -moz-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
+
+  @media @mobile-sm {
+    width: 50px;
+    height: 50px;
+  }
   }
 
   .description__photo:hover {
@@ -42,9 +51,18 @@
   color: @black;
   max-width: 100px;
   text-align: center;
+
+  @media @mobile-sm {
+    font-size: 8px;
+  }
 }
 
 .middle__photo {
   max-width: 200px;
   max-height: 200px;
+
+  @media @mobile-sm {
+    max-width: 160px;
+    max-height: 160px;
+  }
 }

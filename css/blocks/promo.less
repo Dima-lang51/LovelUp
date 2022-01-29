@@ -2,6 +2,10 @@
 
 .promo {
   padding-bottom: 100px;
+
+  @media @mobile {
+    padding-bottom: 20px;
+  }
 }
 
 .promo__name {
@@ -10,6 +14,11 @@
   font-size: 50px;
   font-weight: 700;
   letter-spacing: 10px;
+
+  @media @mobile {
+    font-size: 30px;
+    padding-top: 15px;
+  }
 }
 
 .promo__content {
@@ -17,6 +26,11 @@
   justify-content: center;
   margin-top: 50px;
   padding-bottom: 40px;
+
+  @media @mobile-sm {
+    margin-top: 20px;
+    padding-bottom: 60px;
+  }
 }
 
 .promo__photo {
@@ -26,7 +40,18 @@
   height: auto;
 
   @media @notebook {
+    max-width: 200px;
+    max-height: 300px;  
+  }
 
+  @media @mobile {
+    max-width: 150px;
+    max-height: 200px;
+  }
+
+  @media @mobile-sm {
+    max-width: 100px;
+    max-height: 150px;
   }
 }
 
@@ -36,6 +61,22 @@
   list-style-type: none;
   line-height: 40px;
   font-size: 18px;
+  text-align: center;
+
+  @media @notebook {
+    padding-top: 60px;
+  }
+
+  @media @mobile-sm {
+    padding-left: 50px;
+    padding-top: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.promo__specifications-link {
+  margin-top: 30px;
 }
 
 .promo__video {
@@ -51,5 +92,9 @@
 
   @media @desktop {
     left: calc(50vw - @containerWidth / 2);
+  }
+
+  @media @mobile-sm {
+    min-height: 300px;
   }
 }
