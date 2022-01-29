@@ -24,6 +24,10 @@
   max-width: 291px;
   max-height: 400px;
   height: auto;
+
+  @media @notebook {
+
+  }
 }
 
 .promo__specifications {
@@ -37,11 +41,15 @@
 .promo__video {
   position: absolute;
   top: 0;
-  left: calc(50vw - @containerWidth / 2);
+  left: calc(50vw - 100vw / 2);
   max-width: @containerWidth;
   max-height: 676px;
   object-fit: cover;
   width: 100%;
   z-index: -1;
   opacity: 84%;
+
+  @media @desktop {
+    left: calc(50vw - @containerWidth / 2);
+  }
 }
