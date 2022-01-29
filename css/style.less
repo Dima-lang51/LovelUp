@@ -1,0 +1,46 @@
+//compress: true
+
+@import 'variables';
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 16px;
+  min-height: 100%;
+  font-weight: 400;
+  color: @default;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Blocks */
+@import 'blocks/container';
+@import 'blocks/promo';
+@import 'blocks/btn';
+@import 'blocks/composition';
+@import 'blocks/slider';
+@import 'blocks/presentation';
+@import 'blocks/order';
+@import 'blocks/footer';

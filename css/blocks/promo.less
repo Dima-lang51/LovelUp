@@ -1,0 +1,47 @@
+// main: ../style.less
+
+.promo {
+  padding-bottom: 100px;
+}
+
+.promo__name {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 10px;
+}
+
+.promo__content {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding-bottom: 40px;
+}
+
+.promo__photo {
+  display: block;
+  max-width: 291px;
+  max-height: 400px;
+  height: auto;
+}
+
+.promo__specifications {
+  padding-left: 150px;
+  padding-top: 110px;
+  list-style-type: none;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.promo__video {
+  position: absolute;
+  top: 0;
+  left: calc(50vw - @containerWidth / 2);
+  max-width: @containerWidth;
+  max-height: 676px;
+  object-fit: cover;
+  width: 100%;
+  z-index: -1;
+  opacity: 84%;
+}

@@ -1,0 +1,135 @@
+// main: ../style.less
+
+.order__block {
+  text-align: center;
+}
+
+.order__mainText {
+  padding-bottom: 30px;
+  font-size: 50px;
+  color: @black;
+}
+
+.form {
+  display: flex;
+  justify-content: space-around;
+}
+
+.product__price {
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product__price-old {
+  padding-right: 20px;
+  color: @black;
+  text-decoration: line-through;
+  font-size: 30px;
+}
+
+.product__price-new {
+  font-size: 60px;
+  font-weight: 600;
+  color: #b4014e;
+}
+
+.form__submit {
+  text-align: center;
+}
+
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  width: 300px;
+  left: 15px;
+  top: 0;
+  background: #c96739;
+  color: #fff;
+  padding: 0.5em;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  opacity: 0;
+  transition: 1s;
+}
+
+[data-tooltip]:hover::after {
+  opacity: 1;
+  top: 60px;
+  z-index: 2;
+}
+
+.input {
+  padding-left: 15px;
+  background: #f1f1f1;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 15px auto 0 auto;
+  width: 300px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.send {
+  margin-top: 40px;
+  border: none;
+  background: #058cdd;
+  width: 180px;
+  height: 40px;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  box-shadow: 0 0 20px 0 rgb(5, 140, 221, .8);
+  color: @default;
+  transition: .4s;
+  cursor: pointer;
+  outline: none;
+}
+
+.send:hover{
+  box-shadow: 0 0 25px 5px rgb(5, 140, 221, 1);
+}
+
+
+/* Taimer */
+
+.countdown-time {
+  color: @default;
+}
+
+.countdown {
+  padding-bottom: 20px;
+  font-family: sans-serif;
+  color: @black;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+.countdown-number {
+  padding: 10px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.countdown-time {
+  padding: 15px;
+  border-radius: 3px;
+  background: #b0014c;
+  display: inline-block;
+}
+
+.countdown-text {
+  display: block;
+  padding-top: 5px;
+  font-size: 16px;
+}
